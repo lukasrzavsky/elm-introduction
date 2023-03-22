@@ -1,12 +1,13 @@
 module Main exposing (main)
 
-import Browser
-import Html exposing (Html)
 -- import Html.Attributes as Attributes
 -- import Html.Events as Events
 -- import Http
 -- import Json.Decode as Decode
 -- import Json.Encode as Encode
+
+import Browser
+import Html exposing (Html)
 import Styles
 
 
@@ -22,7 +23,6 @@ main =
 
 type alias Model =
     {}
-
 
 
 baseApiUrl : String
@@ -50,6 +50,7 @@ update msg model =
             )
 
 
+view : Model -> Html Msg
 view _ =
     Html.div Styles.containerStyle
         [ Html.h1 [] [ Html.text "Todo list" ]
