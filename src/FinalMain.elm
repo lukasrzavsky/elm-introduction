@@ -188,7 +188,7 @@ todoListView model =
 
 todoListListView : List Todo -> Html Msg
 todoListListView todos =
-    Html.ul Styles.todoListListStyle
+    Html.ul Styles.todoListStyle
         (List.map todoView todos)
 
 

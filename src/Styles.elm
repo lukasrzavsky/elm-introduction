@@ -5,7 +5,7 @@ module Styles exposing
     , formStyle
     , todoCheckStyle
     , todoListErrorStyle
-    , todoListListStyle
+    , todoListStyle
     , todoStyle
     )
 
@@ -53,8 +53,8 @@ formButtonStyle =
     ]
 
 
-todoListListStyle : List (Attribute msg)
-todoListListStyle =
+todoListStyle : List (Attribute msg)
+todoListStyle =
     [ Attributes.style "padding" "0"
     , Attributes.style "margin" "0"
     ]
